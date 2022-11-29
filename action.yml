@@ -15,6 +15,7 @@ runs:
   env:
     DASTARDLY_TARGET_URL: ${{ inputs.target-url }}
     DASTARDLY_OUTPUT_FILE: /github/workspace/${{ inputs.output-filename }}
+    DASTARDLY_SCAN_TIMEOUT: ${{ inputs.target-timeout }}
 branding:
   icon: 'activity'
   color: 'green'
